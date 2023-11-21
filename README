@@ -1,0 +1,35 @@
+#ChatGPT Summarization Analysis using Chain-Of-Dencity approach
+
+## Overview
+This project leverages the OpenAI GPT models, specifically gpt-3.5-turbo and gpt-4, to generate concise, entity-dense summaries of Wikipedia articles.
+The goal is to compare the summarization effectiveness between the two models.
+
+## Features
+Data Retrieval: Utilizes web scraping to fetch content from specified Wikipedia articles.
+Text Processing: Cleans and preprocesses the retrieved text for effective summarization.
+Summarization: Generates summaries using both gpt-3.5-turbo and gpt-4 models.
+Metrics Analysis: Evaluates various metrics such as density, fusion, and content distribution for the generated summaries.
+Data Visualization: Provides visualizations to compare summarization metrics between the models.
+
+## Dependencies
+Python 3.x,
+Jupyter Notebook v6.4.0
+Libraries: os, re, urllib, matplotlib, nltk, pandas, spacy, beautifulsoup4, openai, rouge
+
+## Usage
+1. Clone the repository:
+git clone https://github.com/markolissimo/ChatGPT-Summarization-Analysis-CoD.git
+cd ChatGPT-Summarization-Analysis
+
+2. Install the dependencies:
+pip install -r requirements.txt
+
+3. Configure OpenAI API key:
+Obtain an OpenAI API key and set it as an environment variable.
+
+4. Run the program:
+python main.ipynb
+Adjust MODEL, AMOUNT_OF_SUMMARIES, SUMMARY_LENGTH, WIKI_URL, PROMPT_TEMPLATE and VANILLA_PROMPT_TEMPLATE to your liking.
+As well as model_chosen, model_name, and model_version in the `summarize` function call.
+
+Detailed instructions are provided in the Jupyter Notebook.
